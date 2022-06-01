@@ -9,6 +9,27 @@
   		background-color: black;
 	}
 
+	.centered {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+
+	.offset-1 {
+	  position: absolute;
+	  top: 10%;
+	  left: 10%;
+	  transform: translate(-50%, -50%);
+	}
+
+	.offset-2 {
+	  position: absolute;
+	  top: 10%;
+	  left: 20%;
+	  transform: translate(-50%, -50%);
+	}	
+
 </style>
 
 <!-- <script type="text/javascript">
@@ -31,7 +52,7 @@
 
 		<!-- <link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />  -->
 
-		<script src="js/lab.js" defer></script>
+		<script src="../js/project.js" defer></script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -39,21 +60,44 @@
 
 <body>
 
-	<div>
+	<div class = "container">
 
-		<img id = "wetlands-image" src="img/wetlands.png" alt="Workplace" usemap="#mymap">
+		<img id = "wetlands-image" src="../img/wetlands.png" alt="Workplace" usemap="#mymap">
+
+		<div id = "content-div" class = "centered" style = "border-radius: 8px; background: white; padding: 10px; border: 2px solid">
+
+		    <h1>Water Fowl of Santa Cruz</h1>
+
+		    <hr>
+
+		    <p>Waterfowl are all types of ducks, geese, and swans. They are mid-sized to large birds most commonly found on or near water. Most have plump bodies, long necks, short wings, and all have webbed feet. Geese tend to be larger than ducks with shorter bills and swans are even bigger with long necks and are usually white.Male ducks are typically more colorful than females during the breeding season.</p>
+
+		    <h3>Interesting Fact:</h3>
+
+		    <p> Most waterfowl fly at speeds of 40 to 60 mph!</p>
+
+		    <h5>Works Cited:</h5>
+
+		    <p>Paws. “Waterfowl.” PAWS, <a href="url">www.paws.org/resources/waterfowl/.<a>
+		    “Waterfowl Habitat.” World Leader in Wetlands & Waterfowl Conservation, Wetland Conservation, <a href="url">www.ducks.org/conservation/waterfowl-habitat</a></p>
+		    
+		</div>
+
+		<input class = "offset-1" type="button" id = "my-button-1" name="my-button-1">
+
+		<input class = "offset-2" type="button" id = "my-button-2" name="my-button-2">
 
 		<map name = "mymap">
 			<!-- Left Plant -->
-			<area id = "test" shape="poly" coords="130 , 332 , 306 , 380 , 214 , 620 , 46 , 548 , 44, 444" href="wetlands-info.html">
+			<area id = "test" shape="poly" coords="130 , 332 , 306 , 380 , 214 , 620 , 46 , 548 , 44, 444" href="tule.html">
 			<!-- Frog  -->
-			<area id = "test" shape="poly" coords="405 , 496 , 532 , 603 , 533 , 683 , 403 , 679" href="wetlands-info.html">
+			<area id = "test" shape="poly" coords="405 , 496 , 532 , 603 , 533 , 683 , 403 , 679" href="red-legged-frog.html">
 			<!-- Middle plant  -->
-			<area id = "test" shape="poly" coords="705 , 491 , 941 , 488 , 1064 , 668 , 1063 , 883 , 705 , 851" href="wetlands-info.html">
+			<area id = "test" shape="poly" coords="705 , 491 , 941 , 488 , 1064 , 668 , 1063 , 883 , 705 , 851" href="common-rush.html">
 			<!-- Duck  -->
-			<area id = "test" shape="poly" coords="969 , 202 , 1071 , 236 , 1101 , 106 , 1230 , 234 , 1099 , 365" href="wetlands-info.html">
+			<area id = "test" shape="poly" coords="969 , 202 , 1071 , 236 , 1101 , 106 , 1230 , 234 , 1099 , 365" href="water-fowl.html">
 			<!-- Right Plant  -->
-			<area id = "test" shape="poly" coords="1316 , 619 , 1428 , 485 , 1558 , 854 , 1366 , 856" href="wetlands-info.html">
+			<area id = "test" shape="poly" coords="1316 , 619 , 1428 , 485 , 1558 , 854 , 1366 , 856" href="willow-herb.html">
 
 		</map>
 		
