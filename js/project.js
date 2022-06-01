@@ -6,16 +6,25 @@ let test_button_2 = document.getElementById("my-button-2");
 
 function testShow(){
 
-	$("#content-div").show(600);
+	$("#content-div").show(800);
 
 };
 
 function testHide(){
 
-	$("#content-div").hide(600);
+	$("#content-div").hide(800);
 
 };
 
-test_button_1.addEventListener("click",testShow);
+function changeContent(){
+
+	$("#content-div").load("../wetlands/common-rush.html #test-content");
+
+}
+
+$("#test-map").hover(testShow,testHide);
+
+test_button_1.addEventListener("click",changeContent);
 
 test_button_2.addEventListener("click",testHide);
+
