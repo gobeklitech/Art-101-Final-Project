@@ -1,8 +1,10 @@
 // JavaScript to handle all the hover events
 
-let test_button_1 = document.getElementById("my-button-1");
+let start_button_sound_on = document.getElementById("start-button-sound-on");
 
-let test_button_2 = document.getElementById("my-button-2");
+let start_button_sound_off = document.getElementById("start-button-sound-off");
+
+//let test_button_2 = document.getElementById("my-button-2");
 
 function contentShow(){
 
@@ -12,7 +14,7 @@ function contentShow(){
 
 function contentHide(){
 
-	$("#content-div").hide(800);
+	$("#intro-div").hide(800);
 
 };
 
@@ -22,8 +24,9 @@ function contentHide(){
 
 // }
 
+start_button_sound_on.addEventListener("click",contentHide);
 
-$("#biome-map").hover(contentShow,contentHide);
+start_button_sound_off.addEventListener("click",contentHide);
 
 // test_button_1.addEventListener("click",changeContent);
 

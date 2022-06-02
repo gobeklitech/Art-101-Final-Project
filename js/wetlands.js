@@ -9,7 +9,13 @@ function wetlandsInit(){
 	$("#rush-div").hide(20);
 	$("#frog-div").hide(20);
 	$("#willow-div").hide(20);
-	
+
+	var audio = new Audio("../aud/crickets.mp3");
+
+	audio.currenttime = 0;
+
+	audio.play();
+
 };
 
 // function contentShow(){
