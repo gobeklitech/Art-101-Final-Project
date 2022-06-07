@@ -7,11 +7,11 @@ function sandhillInit(){
 	$("#manzanita-div").hide(20);
 	$("#spineflower-div").hide(20);
 
-	var audio = new Audio("../aud/crickets.mp3");
+};
 
-	audio.currenttime = 0;
+function introHide(){
 
-	audio.play();
+	$("#intro-div").hide(800);
 
 };
 

@@ -9,14 +9,12 @@ function redwoodsInit(){
 	$("#poison-oak-div").hide(20);
 	$("#woodpecker-div").hide(20);
 
-	var audio = new Audio("../aud/crickets.mp3");
-
-	audio.currenttime = 0;
-
-	audio.play();
-
 };
 
+function introHide(){
+
+	$("#intro-div").hide(800);
+}
 
 function deerShow(){
 
