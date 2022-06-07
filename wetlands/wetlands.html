@@ -67,9 +67,21 @@
 
 		color: #ede0d4 !important;
  		background-color: #7f5539 !important;
+ 		font-family: Trebuchet MS, sans-serif !important;
 
 	 };
 
+	.button {
+	  background-color: #7f5539 !important;
+	  border: none !important;
+	  color: white !important;
+	  padding: 15px 32px !important;
+	  text-align: center !important;
+	  text-decoration: none !important;
+	  display: inline-block !important;
+	  font-size: 16px !important;
+	  margin: 4px 2px !important;
+	}
 </style>
 
 	<head>
@@ -90,7 +102,7 @@
 
 	<div class = "container">
 
-		<img id = "wetlands-image" src="../img/wetlands.png" alt="Workplace" usemap="#mymap">
+		<img id = "wetlands-image" src="../img/wetlands.png" alt="Workplace" usemap="#mymap" onclick = "introHide()">
 
 		<map name = "mymap">
 			<!-- Left Plant -->
@@ -108,10 +120,29 @@
 
 		<!-- All the content  -->
 
-		<div id = "tule-div" class = "centered-tule boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
+		<div id = "intro-div" class = "centered boxstyle" style = "border-radius: 15px; background: white; padding: 10px; border: 2px solid">
 
-		    <h1>Wetlands</h1>
+		    <h1>Wetlands Biome</h1>
 
+			<p>A wetland is a portion of land that is either covered by water or saturated with water, usually groundwater. Wetlands are transition zones, which are areas that are neither totally dry nor totally underwater; they have characteristics of both.</p>
+
+			<p><strong>Please play the Field Recording with the controls below.</strong></p>
+
+			<audio controls>
+
+				<source src = "../aud/Wetlands.mp3" type="audio/mpeg">
+
+			</audio>
+
+			<br>
+			<br>
+
+			<p><strong>Click anywhere outside this box to expore!</strong></p>
+
+			<br>
+
+			<p>Works Cited:
+ 			Evers, Jeannie. “Wetland.” National Geographic Society, 9 Oct. 2012, www.nationalgeographic.org/encyclopedia/wetland/. </p>
 
 		</div>
 
